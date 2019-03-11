@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/shards.min.css" type="text/css">
+    <script src="js/jquery-3.3.1.min.js" rel="script"></script>
+    <script src="js/popper.min.js" rel="script"></script>
+    <script src="js/bootstrap.min.js" rel="script"></script>
+    <script src="js/shards.min.js" rel="script"></script>
+
+    <script src="js/calculator.js" rel="script"></script>
+    <script src="js/init.js" rel="script"></script>
+    <style>
+        .damn-red {
+            color: #ff0000;
+        }
+    </style>
+</head>
+<body class="bg-dark">
+<div class="container" style="margin-top: 50px">
+    <h1 class="text-center text-white">Kalkulator BMI</h1>
+    <div class="row">
+        <div class="col-lg-6">
+            <p class="text-white"><label for="height">Wzrost (w metrach)</label>
+                <input style="width: 300px" type="number" id="height" class="form-control" value="1.7" step="0.05">
+            </p>
+            <p class="text-white">
+                <label for="weight">Waga (w kilogramach)</label>
+                <input style="width: 300px" type="number" id="weight" class="form-control" value="60" step="0.5">
+            </p>
+        </div>
+        <div class="col-lg-6">
+            <h2 class="text-white">Twoje BMI to: <span id="result"></span></h2>
+            <h2 class="text-white">Oznacza to, że masz <span id="result2"></span></h2>
+        </div>
+    </div>
+</div>
+</body>
+</html>
