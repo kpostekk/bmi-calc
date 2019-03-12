@@ -10,11 +10,11 @@ function update_calc() {
     ).removeClass().addClass(bmi_value_result.css_class)
 }
 
-$(document).on('change', '#weight',
+$(document).on('input', '#weight',
     function () {
         update_calc()
     }
-).on('change', '#height',
+).on('input', '#height',
     function () {
         update_calc()
     }
