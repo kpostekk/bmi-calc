@@ -1,5 +1,5 @@
 function in_range(x, min, max) {
-    return x >= min && x <= max;
+    return x >= min && x < max;
 }
 
 function return_bmi(weight, height) {
@@ -14,10 +14,10 @@ class bmi_response {
         if (bmi_value < 18.5) {
             this.text = 'niedowagę';
             this.css_class = 'damn-red';
-        } else if (in_range(bmi_value, 18.5, 24.9)) {
+        } else if (in_range(bmi_value, 18.5, 25)) {
             this.text = 'wagę prawidłową';
             this.css_class = 'text-success';
-        } else if (in_range(bmi_value, 25, 29.9)) {
+        } else if (in_range(bmi_value, 25, 30)) {
             this.text = 'nadwagę';
             this.css_class = 'text-warning';
         } else if (bmi_value > 30) {
@@ -25,4 +25,3 @@ class bmi_response {
             this.css_class = 'damn-red';
         }
     }
-}
