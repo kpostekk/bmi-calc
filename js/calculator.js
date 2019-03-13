@@ -25,3 +25,4 @@ class bmi_response {
             this.css_class = 'damn-red';
         }
     }
+}
